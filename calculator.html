@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <body style="margin-left:0px;margin-top:0px;">
+    <div style="height:650px;width:1280px;background-color: rgb(36, 63, 114)">
+        <div style="height:15%;width:100%;background-color: rgb(36, 63, 114);display:flex;">
+           <div style="height:100%;width:36%;"></div>
+           <div style="height:60%;width:64%;margin-top:20px;font-size:60px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: ivory;">CALCULATOR</div>
+           </div>
+           <div style="height:70%;width:100%;display:flex">
+            <div style="height:100%; width:15%;background-color: rgb(36, 63, 114) "></div>
+            <div style="height:100%;width:70%; background-color: rgb(98, 174, 221);border-radius:5%;">
+                <div style="height:45%;width:100%;display:flex">
+                    <div style="height:100%;width:30%"></div>
+                    <div style="height:100%;width:40%;background-color: rgb(255, 255, 255);border-radius:5%;margin-top:10px">
+                        <div id='shape' style="height:80%;width:80%;margin-left: 34px;margin-top:21px;">
+                            <h2 id="result" style="margin-left:40px; margin-top:80px">Answer:</h4></div>
+                        
+                    </div>
+                    <div style="height:100%;width:30%"></div>
+                        </div>
+                        <div style="height:55%;width:100%;display:flex">
+                            <div style="height:100%;width:30%;"></div>
+                            <div  style="height:100%;width:40%;">
+                            <input type="text" placeholder="First Number" id="fno" style="height: 30px; width: 200px;margin-top:30px;" >
+                            <input type="text" placeholder="Second Number" id="sno"  style="height: 30px; width: 200px;margin-top:10px;"><br> 
+                            <button onclick="sum()" style="margin-top:10px;">Add</button>
+                        <button onclick="sub()">Sub</button>
+                        <button onclick="mul()">Multiply</button>
+                        <button onclick="div()">Divide</button>
+                        </div> 
+                        <script>
+                            function sum()
+                          {
+                                  var fno=document.getElementById('fno').value;
+                                  var sno=document.getElementById('sno').value;
+                                  document.getElementById('result').innerText=Number(fno)+Number(sno);
+                          }
+                          function sub()
+                          {
+                                  var fno=document.getElementById('fno').value;
+                                  var sno=document.getElementById('sno').value;
+                                  document.getElementById('result').innerText=Number(fno)-Number(sno);
+                          }
+                          function mul()
+                          {
+                                  var fno=document.getElementById('fno').value;
+                                  var sno=document.getElementById('sno').value;
+                                  document.getElementById('result').innerText=Number(fno)*Number(sno);
+                          }
+                          function div()
+                          {
+                                  var fno=document.getElementById('fno').value;
+                                  var sno=document.getElementById('sno').value;
+                                  document.getElementById('result').innerText=Number(fno)/Number(sno);
+                          }
+                          </script> 
+</body>
+</html>
